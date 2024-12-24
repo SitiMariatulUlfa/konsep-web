@@ -1,0 +1,60 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf4f5; /* Soft pink background */
+    color: #4a4a4a; /* Neutral text color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #fce4ec; /* Light pastel pink */
+    border-bottom: 1px solid #f8bbd0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6a1b9a; /* Soft purple */
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6a1b9a;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ad1457; /* Hover color */
+}
+
+main {
+    text-align: center;
+    margin: 40px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #ad1457;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 20px;
+    color: #6a1b9a;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food - Cupcake House</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf4f5; /* Soft pink background */
+            color: #4a4a4a; /* Neutral text color */
+        }
+
+        header {
+            background-color: #fce4ec;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ad1457;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none; /* Remove underline from links */
+            color: #6a1b9a;
+            font-weight: bold;
+        }
+
+        main {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .title h1 {
+            font-size: 28px;
+            color: #ad1457;
+            margin-right: 5px; /* Space between text and image */
+        }
+
+        .title img {
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Container for cupcakes with horizontal scrolling */
+        .cupcake-container {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            padding: 20px;
+            gap: 30px; /* Increased gap between cupcakes */
+            scroll-behavior: smooth; /* Smooth scrolling */
+            width: 100%;
+        }
+
+        .cupcake-item {
+            text-align: center;
+            flex: 0 0 auto; /* Prevent items from shrinking */
+            width: 250px; /* Set fixed width for each cupcake */
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: center; /* Vertically center elements */
+            align-items: center; /* Horizontally center elements */
+        }
+
+        .cupcake-item img {
+            width: 230px; /* Fixed image size to ensure consistency */
+            height: 285px; /* Fixed image height to match */
+            margin-bottom: 10px; /* Maintain spacing between image and text */
+            border-radius: 50%;
+        }
+
+        .cupcake-item p {
+            margin: 5px 0; /* Small margin to space text evenly */
+            font-size: 16px;
+            color: #6a1b9a;
+            text-align: center; /* Ensure text is centered */
+        }
+
+        .cupcake-item .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ad1457;
+            margin-top: 5px;
+            text-align: center; /* Center price text */
+        }
+
+        /* Optional: Adding scrollbar styling */
+        .cupcake-container::-webkit-scrollbar {
+            height: 8px; /* Make scrollbar visible */
+        }
+
+        .cupcake-item img {
+    width: 230px;
+    height: 285px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: box-shadow 0.5s ease-in-out; /* Transisi lembut */
+}
+
+.cupcake-item img:hover {
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.8); /* Efek glow */
+    transform: scale(1.05); /* Sedikit membesar */
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Cupcake House</div> 
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="cake.html">Cake</a>
+            <a href="delivery.php">Delivery</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="title">
+            <img src="cupcake.gif" alt="Cupcake Image">
+            <h1>Our Delicious Cupcakes</h1>
+            <img src="cupcake.gif" alt="Cupcake Image">
+        </div>
+
+        <!-- Container for the cupcakes -->
+        <div class="cupcake-container">
+            <div class="cupcake-item">
+                <img src="cupcake-chocolate.png" alt="Chocolate Cupcake">
+                <p>Chocolate Cupcake</p>
+                <p class="price">$2.90</p> <!-- Price added -->
+            </div>
+            <div class="cupcake-item">
+                <img src="cupcake-white.png" alt="Vanilla Cupcake">
+                <p>Vanilla Cupcake</p>
+                <p class="price">$2.80</p> <!-- Price added -->
+            </div>
+            <div class="cupcake-item">
+                <img src="cupcake-red.png" alt="Red Velvet Cupcake">
+                <p>Red Velvet Cupcake</p>
+                <p class="price">$3.50</p> <!-- Price added -->
+            </div>
+            <div class="cupcake-item">
+                <img src="cupcake-pink.png" alt="Strawberry Cupcake">
+                <p>Strawberry Cupcake</p>
+                <p class="price">$3.20</p> <!-- Price added -->
+            </div>
+            <div class="cupcake-item">
+                <img src="cupcake-blue.png" alt="Mint Cupcake">
+                <p>Mint Cupcake</p>
+                <p class="price">$2.90</p> <!-- Price added -->
+            </div>
+            <div class="cupcake-item">
+                <img src="cupcake-yellow.png" alt="Banana Cupcake">
+                <p>Banana Cupcake</p>
+                <p class="price">$3.10</p> <!-- Price added -->
+            </div>
+            <div class="cupcake-item">
+                <img src="cupcake-purple.png" alt="Blueberry Cupcake">
+                <p>Blueberry Cupcake</p>
+                <p class="price">$3.30</p> <!-- Price added -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>
